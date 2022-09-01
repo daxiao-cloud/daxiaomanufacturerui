@@ -27,6 +27,9 @@ export function ContentWindowDeviceGroups() {
               <FormField label='设备组描述'>
                 <TextArea />
               </FormField>
+              <FormField label='配额'>
+                <TextInput placeholder={100} />
+              </FormField>
               <Box direction='row' gap='small' justify='center'>
                 <Button primary label='确定' onClick={() => setOpen(false)} />
                 <Button label='取消' onClick={() => setOpen(false)} />

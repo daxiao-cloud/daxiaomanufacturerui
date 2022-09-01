@@ -46,6 +46,9 @@ export function ContentWindowDeviceGroupSetting() {
         <FormField label='设备组Key'>
           <TextInput value='EC36948DFBB26815585ABD5E9375D934' />
         </FormField>
+        <FormField label='配额'>
+          <TextInput value={100} />
+        </FormField>
         <FormField label='创建时间'>
           <TextInput value='2022/8/19 17:55' />
         </FormField>
