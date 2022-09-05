@@ -1,4 +1,4 @@
-import { Box, Heading, TableBody, Button, Table, TableHeader, TableRow, TableCell } from 'grommet';
+import { Box, Heading, TableBody, Button, Table, TableRow, TableCell } from 'grommet';
 import { LinkPrevious } from 'grommet-icons';
 import Link from 'next/link';
 
