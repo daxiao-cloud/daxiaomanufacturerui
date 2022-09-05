@@ -10,7 +10,7 @@ export function ContentEnterprise() {
       <CheckBox label='测试：是否已认证' onChange={event => setVerified(event.target.checked)} />
       <Heading>企业认证</Heading>
       {!verified && <Box direction='row' pad='small'>
-        <Button icon={<Add />} label='开始企业认证' />
+        <Link href='/enterprise/addProfile'><Button icon={<Add />} label='开始企业认证' /></Link>
       </Box>}
       {verified && <Box>
         <Table>
@@ -30,8 +30,8 @@ export function ContentEnterprise() {
           </TableBody>
         </Table>
         <Box direction='row' pad='small' gap='small'>
-          <Link href='profile'><Button label='主体详情' /></Link>
-          <Button label='变更主体' />
+          <Link href='/enterprise/profile'><Button label='主体详情' /></Link>
+          <Link href='/enterprise/addProfile'><Button icon={<Add />} label='变更主体' /></Link>
         </Box>
       </Box>}
     </Box>

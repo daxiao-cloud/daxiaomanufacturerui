@@ -1,5 +1,4 @@
-import { Box, Heading, Text, CheckBox, Table, TableHeader, TableBody, TableRow, TableCell } from 'grommet';
-import { Add } from 'grommet-icons';
+import { Box, Heading, Text } from 'grommet';
 
 export function ContentProfile() {
   return (
