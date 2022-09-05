@@ -1,8 +1,9 @@
-import { Box, Heading, Text } from 'grommet';
+import { Box, Heading, Text, Button } from 'grommet';
+import Link from 'next/link';
 
 export function ContentProfile() {
   return (
-    <Box margin='small' overflow='auto'>
+    <Box margin='small' gap='small' overflow='auto'>
       <Heading>主体信息</Heading>
       <Box>
         <Heading level={3}>主办单位</Heading>
@@ -18,6 +19,9 @@ export function ContentProfile() {
         <Text>证件号码：32077349831122381Z</Text>
         <Text>手机号码：13874630183</Text>
         <Text>电子邮箱：hxxxxxxg.zhang@outlook.com</Text>
+      </Box>
+      <Box direction='row' pad='small'>
+        <Link href='/enterprise'><Button label='返回' /></Link>
       </Box>
     </Box>
   );

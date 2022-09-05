@@ -1,5 +1,4 @@
 import { Box, Heading, Button, CheckBox, Table, TableHeader, TableBody, TableRow, TableCell } from 'grommet';
-import { Add } from 'grommet-icons';
 import Link from 'next/link';
 import React from 'react';
 
@@ -10,7 +9,7 @@ export function ContentEnterprise() {
       <CheckBox label='测试：是否已认证' onChange={event => setVerified(event.target.checked)} />
       <Heading>企业认证</Heading>
       {!verified && <Box direction='row' pad='small'>
-        <Link href='/enterprise/addProfile'><Button icon={<Add />} label='开始企业认证' /></Link>
+        <Link href='/enterprise/addProfile'><Button label='开始企业认证' /></Link>
       </Box>}
       {verified && <Box>
         <Table>
@@ -31,7 +30,7 @@ export function ContentEnterprise() {
         </Table>
         <Box direction='row' pad='small' gap='small'>
           <Link href='/enterprise/profile'><Button label='主体详情' /></Link>
-          <Link href='/enterprise/addProfile'><Button icon={<Add />} label='变更主体' /></Link>
+          <Link href='/enterprise/addProfile'><Button label='变更主体' /></Link>
         </Box>
       </Box>}
     </Box>
