@@ -12,7 +12,7 @@ export function HeaderBar() {
       </Box>
       <Select options={['简体中文', 'English']} value='简体中文' />
       <Menu label={<User />} items={[
-        {label: <Link href='/profile'><Button plain label='企业认证' /></Link>, icon: <Certificate />, gap: 'small'},
+        {label: <Link href='/enterprise'><Button plain label='企业认证' /></Link>, icon: <Certificate />, gap: 'small'},
         {label: '退出登录', icon: <Logout />, gap: 'small'},
       ]} />
     </Header>
